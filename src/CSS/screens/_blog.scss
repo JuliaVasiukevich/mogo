@@ -1,0 +1,33 @@
+.blog {
+  &__heading {
+    color: $dark;
+    font-weight: 700;
+    margin-bottom: 36px;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-left: 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .blog {
+    &__image {
+      width: 83px;
+      height: 71px;
+    }
+  }
+}

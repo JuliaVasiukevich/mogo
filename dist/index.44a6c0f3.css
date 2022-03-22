@@ -1,0 +1,55 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap";
+body {
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 176px;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: "Kaushan Script", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 93px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+h4 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+h6 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+}
+.divider {
+  height: 4px;
+  background: red;
+}
+.portfolio {
+  text-align: center;
+}
+.portfolio__title {
+  font-size: 30px;
+  line-height: 44px;
+}
+.portfolio__subtitle {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=index.44a6c0f3.css.map */

@@ -1,0 +1,37 @@
+.counter {
+  background-color: $green;
+  color: $white;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    margin-top: 70px;
+    margin-bottom: 14px;
+  }
+
+  &__description{
+      margin-bottom: 70px;
+  }
+
+  &__item {
+    border-right: 1px solid $white;
+  }
+
+  &__item1 {
+    border-left: 1px solid $white;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .counter {
+    &__grid{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

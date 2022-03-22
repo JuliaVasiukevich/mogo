@@ -1,0 +1,83 @@
+.info {
+  &__logo {
+    margin-bottom: 42px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: $gray;
+    margin-bottom: 48px;
+  }
+
+  &__followers {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 30px;
+    color: $dark;
+    margin-bottom: 22px;
+  }
+
+  &__divider {
+    color: $gray;
+    margin-bottom: 13px;
+  }
+
+  &__follow {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: $gray;
+  }
+
+  &__networks {
+    display: grid;
+    grid-template-columns: 5fr repeat(8, 1fr);
+  }
+
+  &__form {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+  }
+
+  &__input {
+    border: none;
+    border: 1px solid $gray;
+    height: 55px;
+    padding: 0 64px;
+
+    &::placeholder {
+      font-size: 18px;
+      line-height: 21px;
+      color: $gray;
+    }
+  }
+
+  &__button {
+    height: 55;
+    font-family: $raleway-font-stack;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $white;
+    background-color: $green;
+    padding: 10px;
+    border: 1px solid $gray;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .info {
+    &__form {
+      flex-direction: column;
+    }
+    &__input {
+      margin-bottom: 24px;
+    }
+  }
+}
