@@ -1,5 +1,5 @@
 .feedback {
-    margin-top: 114px;
+  margin-top: 114px;
   background-color: $LightGray;
   padding: 42px 0px;
   text-align: left;
@@ -10,6 +10,10 @@
 
   &__text {
     margin-left: 42px;
+
+    @media screen and (max-width: 1510px) {
+      margin-left: 20px;
+    }
   }
 
   &__content {
@@ -20,15 +24,25 @@
     line-height: 28px;
     color: $gray;
     margin-bottom: 28px;
+
+    @media screen and (max-width: 1510px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
-  &__divider{
+  &__divider {
     height: 4px;
     width: 70px;
     background: $red;
     border: none;
     position: absolute;
-    bottom: 80px;
+    bottom: 110px;
+
+    @media screen and (max-width: 1024px) {
+      width: 47px;
+      bottom: 50px;
+    }
   }
 
   &__name {
@@ -36,26 +50,26 @@
     font-size: 30px;
     line-height: 44px;
     margin-left: 90px;
-
-    &::before {
-      content: "";
-      display: block;
-      width: 70px;
-      height: 4px;
-      color: $red;
-    }
   }
 
-
-&-slider{
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
-
-  &__content{
+  &-slider {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  &-slider__content {
     display: flex;
     margin: 28px 100px;
+    @media screen and (max-width: 1024px) {
+      margin: 28px 16px;
+    }
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .feedback {
+    &__image {
+      display: none;
+    }
+  }
 }

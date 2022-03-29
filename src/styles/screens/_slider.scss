@@ -1,0 +1,53 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: left;
+
+  &__progressbar {
+      padding: 15px;
+      flex-grow: 1;
+
+      @media (max-width: 768px) {
+        margin-bottom: 42px;
+      }
+
+  }
+
+  &__line {
+    width: 100%;
+    height: 4px;
+    background: $yellow;
+}
+
+  &__line--active {
+    width: 100%;
+    height: 4px;
+    background: $white;
+    background: linear-gradient(90deg, $red 30%, $white 30%);
+
+    @media (max-width: 1024px) {
+        background: $red;
+      }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    padding: 20px 0px;
+
+    @media (max-width: 1510px) {
+      width: 67px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    @media (max-width: 1024px) {
+        display: none;
+      }
+
+  }
+}

@@ -1,6 +1,10 @@
 .info {
   &__logo {
     margin-bottom: 42px;
+
+    @media screen and (max-width: 1024px) {
+          margin: 0 auto 20px;
+    }
   }
 
   &__text {
@@ -41,23 +45,32 @@
     margin-top: 24px;
     margin-bottom: 24px;
     display: flex;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 
   &__input {
     border: none;
     border: 1px solid $gray;
     height: 55px;
-    padding: 0 64px;
+    flex-grow: 8;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 24px;
+    }
 
     &::placeholder {
       font-size: 18px;
       line-height: 21px;
       color: $gray;
+      padding-left: 50px;
     }
   }
 
   &__button {
-    height: 55;
+    height: 55px;
     font-family: $raleway-font-stack;
     font-weight: 700;
     font-size: 18px;
@@ -68,16 +81,5 @@
     border: 1px solid $gray;
     text-transform: uppercase;
     cursor: pointer;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .info {
-    &__form {
-      flex-direction: column;
-    }
-    &__input {
-      margin-bottom: 24px;
-    }
   }
 }

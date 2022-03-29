@@ -5,6 +5,11 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__number {
@@ -13,14 +18,25 @@
     line-height: 75px;
     margin-top: 70px;
     margin-bottom: 14px;
+
+    @media screen and (max-width: 1510px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
 
-  &__description{
-      margin-bottom: 70px;
+  &__description {
+    margin-bottom: 70px;
   }
 
   &__item {
     border-right: 1px solid $white;
+
+    @media screen and (max-width: 1024px) {
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid $white;
+    }
   }
 
   &__item1 {
@@ -28,10 +44,10 @@
   }
 }
 
-@media screen and (max-width: 319px) {
+@media screen and (max-width: 1024px) {
   .counter {
-    &__grid{
-      grid-template-columns: 1fr 1fr;
+    &__item5 {
+      grid-column: 1/3;
     }
   }
 }

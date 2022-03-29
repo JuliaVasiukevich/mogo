@@ -1,25 +1,38 @@
 .instagram {
-    &__heading {
-      color: $dark;
-      font-weight: 700;
-      margin-bottom: 36px;
-    }
-  
-    &__content {
-        max-width: 270px;
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      grid-template-rows: repeat(3,1fr);
-      gap: 1px;
-      margin-bottom: 38px;
-    }
+  &__heading {
+    color: $dark;
+    font-weight: 700;
+    margin-bottom: 36px;
 
-  
-    &__link {
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 15px;
-        color: $dark;
-        text-transform: uppercase;
+    @media screen and (max-width: 1024px) {
+      text-align: center;
     }
   }
+
+  &__content {
+    width: 270px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+    margin-bottom: 38px;
+
+    @media screen and (max-width: 1024px) {
+      width: 285px;
+      margin: 0 auto;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: $dark;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+      text-align: center;
+    }
+  }
+}

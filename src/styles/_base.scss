@@ -16,10 +16,17 @@ h1 {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1510px) {
   h1 {
     font-size: 96px;
     line-height: 117px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 48px;
+    line-height: 59px;
   }
 }
 
@@ -30,10 +37,17 @@ h2 {
   line-height: 93px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1510px) {
   h2 {
     font-size: 48px;
     line-height: 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 36px;
+    line-height: 52px;
   }
 }
 
@@ -41,6 +55,13 @@ h3 {
   font-weight: 700;
   font-size: 30px;
   line-height: 35px;
+}
+
+@media screen and (max-width: 1510px) {
+  h3 {
+    font-size: 24px;
+line-height: 28px;
+  }
 }
 
 h4 {
@@ -70,9 +91,16 @@ h6 {
   border: none;
 }
 
+@media screen and (max-width: 1510px) {
+  .divider {
+    width: 134px;
+    margin: 48px auto;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .divider {
-    width: 148px;
+    width: 134px;
     margin: 48px auto;
   }
 }
@@ -82,10 +110,10 @@ h6 {
   margin-right: 170px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1510px) {
   .section {
     margin-left: 16px;
-  margin-right: 16px;
+    margin-right: 16px;
   }
 }
 
@@ -94,9 +122,20 @@ h6 {
   font-size: 80px;
   color: $gray;
 }
+@media screen and (max-width: 1024px) {
+  .swiper-button-prev::after {
+    display: none;
+  }
+}
 
 .swiper-button-next::after {
   content: ">";
   font-size: 80px;
   color: $gray;
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-button-next::after {
+    display: none;
+  }
 }
