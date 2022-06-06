@@ -1,0 +1,35 @@
+.blog {
+  &__heading {
+    color: $dark;
+    font-weight: 700;
+    margin-bottom: 36px;
+
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    height: 100%;
+
+    @media screen and (max-width: 1024px) {
+      width: 83px;
+      height: 71px;
+    }
+  }
+
+  &__text {
+    margin-left: 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+}

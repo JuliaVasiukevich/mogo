@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $raleway-font-stack;
+}
+
+h1 {
+  font-family: $montserrat-font-stack;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 176px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1510px) {
+  h1 {
+    font-size: 96px;
+    line-height: 117px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 48px;
+    line-height: 59px;
+  }
+}
+
+h2 {
+  font-family: $kaushan-font-stack;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 93px;
+}
+
+@media screen and (max-width: 1510px) {
+  h2 {
+    font-size: 48px;
+    line-height: 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 36px;
+    line-height: 52px;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+@media screen and (max-width: 1510px) {
+  h3 {
+    font-size: 24px;
+line-height: 28px;
+  }
+}
+
+h4 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.divider {
+  height: 4px;
+  width: 170px;
+  background: $red;
+  margin: 63px auto 38px;
+  border: none;
+}
+
+@media screen and (max-width: 1510px) {
+  .divider {
+    width: 134px;
+    margin: 48px auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .divider {
+    width: 134px;
+    margin: 48px auto;
+  }
+}
+
+.section {
+  margin-left: 170px;
+  margin-right: 170px;
+}
+
+@media screen and (max-width: 1510px) {
+  .section {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+.swiper-button-prev::after {
+  content: "<";
+  font-size: 80px;
+  color: $gray;
+}
+@media screen and (max-width: 1024px) {
+  .swiper-button-prev::after {
+    display: none;
+  }
+}
+
+.swiper-button-next::after {
+  content: ">";
+  font-size: 80px;
+  color: $gray;
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-button-next::after {
+    display: none;
+  }
+}
